@@ -1,6 +1,6 @@
 package com.rooon.manyfunctiontutorial.facade;
 
-import com.rooon.manyfunctiontutorial.repository.LockRepository;
+import com.rooon.manyfunctiontutorial.repository.mariadb.LockRepository;
 import com.rooon.manyfunctiontutorial.service.StockService;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,7 +1,7 @@
 package com.rooon.manyfunctiontutorial.facade;
 
-import com.rooon.manyfunctiontutorial.domain.Stock;
-import com.rooon.manyfunctiontutorial.repository.StockRepository;
+import com.rooon.manyfunctiontutorial.domain.mariadb.Stock;
+import com.rooon.manyfunctiontutorial.repository.mariadb.StockRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

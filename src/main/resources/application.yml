@@ -4,15 +4,35 @@ server:
 spring:
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
     show-sql: true
-  datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://desktop:3306/test
-    username: backendjjn
-    password: 12345
-    hikari:
-      maximum-pool-size: 40
+  jta:
+    enabled: true
+    atomikos:
+      datasource:
+        maria:
+          xa-data-source-class-name: org.mariadb.jdbc.MariaDbDataSource
+          unique-resource-name: mariaDataSource
+          max-pool-size: 2
+          min-pool-size: 2
+          borrow-connection-timeout: 10
+          max-idle-time: 50
+          test-query: 'SELECT 1'
+          xa-properties:
+            user:
+            password:
+            url: jdbc:mariadb://desktop:3306/bbi?pinGlobalTxToPhysicalConnection=true&socketTimeout=60000&sessionVariables=max_statement_time=10
+          max-lifetime: 50
+        pgsql:
+          xa-data-source-class-name: org.postgresql.xa.PGXADataSource
+          unique-resource-name: pgsqlDataSource
+          max-pool-size: 2
+          min-pool-size: 2
+          xa-properties:
+            URL: jdbc:postgresql://desktop:5432/cgidis
+            user:
+            password:
+          max-lifetime: 60
   data:
     redis:
       port: 6379

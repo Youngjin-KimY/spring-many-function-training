@@ -1,6 +1,6 @@
-package com.rooon.manyfunctiontutorial.repository;
+package com.rooon.manyfunctiontutorial.repository.mariadb;
 
-import com.rooon.manyfunctiontutorial.domain.Stock;
+import com.rooon.manyfunctiontutorial.domain.mariadb.Stock;
 import jakarta.persistence.LockModeType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;

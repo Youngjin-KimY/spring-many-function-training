@@ -26,6 +26,10 @@ dependencies {
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    implementation("jakarta.transaction:jakarta.transaction-api:2.0.1")
+    implementation("com.atomikos:transactions-spring-boot3-starter:6.0.0")
+    implementation("org.postgresql:postgresql:42.7.1")
 }
 
 tasks.named('test') {

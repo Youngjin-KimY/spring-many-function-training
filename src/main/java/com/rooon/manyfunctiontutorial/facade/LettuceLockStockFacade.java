@@ -1,7 +1,6 @@
 package com.rooon.manyfunctiontutorial.facade;
 
 import com.rooon.manyfunctiontutorial.repository.RedisLockRepository;
-import com.rooon.manyfunctiontutorial.repository.StockRepository;
 import com.rooon.manyfunctiontutorial.service.StockService;
 import org.springframework.stereotype.Component;
 

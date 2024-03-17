@@ -1,8 +1,7 @@
 package com.rooon.manyfunctiontutorial.service;
 
-import com.rooon.manyfunctiontutorial.domain.Stock;
-import com.rooon.manyfunctiontutorial.repository.StockRepository;
-import org.junit.jupiter.api.AfterEach;
+import com.rooon.manyfunctiontutorial.domain.mariadb.Stock;
+import com.rooon.manyfunctiontutorial.repository.mariadb.StockRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

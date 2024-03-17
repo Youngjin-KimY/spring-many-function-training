@@ -1,4 +1,4 @@
-package com.rooon.manyfunctiontutorial.domain;
+package com.rooon.manyfunctiontutorial.domain.mariadb;
 
 
 import jakarta.persistence.*;

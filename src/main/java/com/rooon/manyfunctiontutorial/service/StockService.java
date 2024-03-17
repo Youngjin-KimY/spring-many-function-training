@@ -1,7 +1,7 @@
 package com.rooon.manyfunctiontutorial.service;
 
-import com.rooon.manyfunctiontutorial.domain.Stock;
-import com.rooon.manyfunctiontutorial.repository.StockRepository;
+import com.rooon.manyfunctiontutorial.domain.mariadb.Stock;
+import com.rooon.manyfunctiontutorial.repository.mariadb.StockRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
